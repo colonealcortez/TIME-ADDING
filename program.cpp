@@ -20,7 +20,7 @@ class time
 			m=a1.mins+a2.mins;
 			if(m<=60)
 			{
-				c.mins=0;
+				c.mins=m;
 				c.hrs=a1.hrs+a2.hrs;
 			}
 			else
@@ -38,7 +38,7 @@ int main()
 	t2.get();
 	t3=t3.add(t1,t2);
 	cout<<"---ADDED TIME---"<<endl;
-	cout<<t3.hrs<<" Hrs :"<<t3.hrs<<" Mins";
+	cout<<t3.hrs<<" Hrs :"<<t3.mins<<" Mins";
 	return(0);
 }
 		
